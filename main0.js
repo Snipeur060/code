@@ -1,11 +1,3 @@
-(function(){
-    var oldLog = console.log;
-    console.log = function (message) {
-        document.getElementById('a').value += message
-        oldLog.apply(arguments);
-    };
-})();
-
 function download(filename, text) {
   var element = document.createElement('a');
   element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
@@ -27,7 +19,6 @@ getGiftCode = function () {
     for(var i = 0; i < document.getElementById('long').value; i++){
         code = code + dict.charAt(Math.floor(Math.random() * dict.length));
     }
-    console.log('[GEN] ' + code + "\n");
     code += '\n'
     document.getElementById('b').value += code;
 
