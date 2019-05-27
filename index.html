@@ -84,7 +84,18 @@ Your browser does not support the audio element.
 <p></p>
     <p></p>
 <button id='save' onclick="var rows = document.getElementById('b').value.split('\n').length -  1; download(rows + ' Unchecked Codes.txt', document.getElementById('b').value); document.getElementById('b').value = '';" class="button">Make Log Dump</button>
-    <p></p>
+	<p></p>
+<button class="button" onclick="net()">
+  Set to Netflix
+</button>
+<p></p>
+<button class="button" onclick="apple()">
+  Set to Apple
+</button>
+<p></p>
+<button class="button" onclick="reset()">
+  Reset
+</button>
 <textarea style="display: none;" id="b" rows="11" cols="100" readonly>
 </textarea>
 	<script src="main0.js"></script>
