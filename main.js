@@ -30,7 +30,7 @@ net = function () {
   document.getElementById('long').readOnly = 'true';
   document.getElementById('long').value = '12';
   document.getElementById('netflixprefix').style.display = 'block';
-  getGiftCode = function () {
+ getGiftCode = function () {
     let code = '';
     let ler = '';
     let netflix = '';
@@ -57,7 +57,7 @@ net = function () {
         code = document.getElementById('netflix').value + code;
         code += '\n';
         document.getElementById('b').value += code;
-    }
+}
         }
 
 
